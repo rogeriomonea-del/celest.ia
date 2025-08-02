@@ -1,0 +1,28 @@
+{
+    "columns": [
+        {
+            "name": "Backlog",
+            "cards": [
+                "Scraping LATAM/Copa",
+                "Exporta\u00e7\u00e3o de planilhas"
+            ]
+        },
+        {
+            "name": "Em progresso",
+            "cards": [
+                "Painel dashboard",
+                "Deploy Railway/VPS"
+            ]
+        },
+        {
+            "name": "Testes",
+            "cards": [
+                "Self-healing da IA"
+            ]
+        },
+        {
+            "name": "Conclu\u00eddo",
+            "cards": []
+        }
+    ]
+}
