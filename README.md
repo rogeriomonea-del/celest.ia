@@ -16,8 +16,10 @@ módulo principal `research_planner.py` e pelos testes unitários em `tests/`.
 .
 ├── README.md
 ├── research_planner.py
+├── scrapers.py
 └── tests
-    └── test_research_planner.py
+    ├── test_research_planner.py
+    └── test_scrapers.py
 ```
 
 ## Execução dos testes
@@ -28,3 +30,9 @@ Requisitos: [pytest](https://pytest.org/).
 pip install pytest
 pytest
 ```
+
+## Scrapers de companhias aéreas
+
+O módulo `scrapers.py` inclui funções que demonstram como coletar preços de voo
+na Copa Airlines e Skyscanner, além de consultar o saldo do programa ConnectMiles.
+Antes de realizar scraping, verifique os termos de uso de cada serviço.
