@@ -1,0 +1,101 @@
+2025-08-05 04:26:00,360 - INFO - 📁 Reports will be saved to: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports
+2025-08-05 04:26:00,361 - INFO - 🔍 Scanning for Python files...
+2025-08-05 04:26:00,381 - INFO - 📊 Found 49 Python files to analyze
+2025-08-05 04:26:14,591 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:26:14,604 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/research_planner.md
+2025-08-05 04:26:36,402 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:26:36,409 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/integration_example.md
+2025-08-05 04:26:47,733 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:26:47,736 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/test_llm_client.md
+2025-08-05 04:27:02,411 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:27:02,415 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/scrapers.md
+2025-08-05 04:27:20,423 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:27:20,426 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/demo_ai_system.md
+2025-08-05 04:27:40,375 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:27:40,379 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/codex_batch_runner.md
+2025-08-05 04:27:55,223 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:27:55,227 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/test_skyscanner.md
+2025-08-05 04:28:06,546 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:28:06,565 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/tests_test_research_planner.md
+2025-08-05 04:28:21,308 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:28:21,310 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/tests_test_scrapers.md
+2025-08-05 04:28:37,132 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:28:37,136 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/Celest.ia_v2_Alpha_research_planner.md
+2025-08-05 04:28:52,901 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:28:52,904 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/Celest.ia_v2_Alpha_scrapers.md
+2025-08-05 04:29:09,642 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:29:09,645 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src___init__.md
+2025-08-05 04:29:26,055 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:29:26,062 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_database_models.md
+2025-08-05 04:29:39,173 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:29:39,178 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_database___init__.md
+2025-08-05 04:30:01,072 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:30:01,098 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_database_repositories.md
+2025-08-05 04:30:23,834 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:30:23,837 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_core_config.md
+2025-08-05 04:30:38,456 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:30:38,459 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_core_database.md
+2025-08-05 04:30:53,452 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:30:53,457 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_core___init__.md
+2025-08-05 04:31:08,199 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:31:08,216 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_core_orchestrator.md
+2025-08-05 04:31:20,974 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:31:20,977 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_utils_logging.md
+2025-08-05 04:31:36,430 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:31:36,440 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_utils_validators.md
+2025-08-05 04:31:45,447 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:31:45,451 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_utils___init__.md
+2025-08-05 04:31:57,018 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:31:57,022 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_ai_self_improvement.md
+2025-08-05 04:32:14,734 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:32:14,738 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_ai_ml_engine.md
+2025-08-05 04:32:28,763 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:32:28,766 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_ai___init__.md
+2025-08-05 04:32:46,584 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:32:46,590 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_ai_price_analyzer.md
+2025-08-05 04:33:03,272 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:33:03,276 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_ai_llm_client.md
+2025-08-05 04:33:23,138 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:33:23,142 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_ai_orchestrator.md
+2025-08-05 04:33:42,166 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:33:42,168 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_ai_self_healing.md
+2025-08-05 04:33:57,677 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:33:57,687 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_api___init__.md
+2025-08-05 04:34:17,513 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:34:17,516 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_api_main.md
+2025-08-05 04:34:33,802 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:34:33,805 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_bot_handlers.md
+2025-08-05 04:34:45,457 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:34:45,466 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_bot___init__.md
+2025-08-05 04:35:01,229 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:35:01,231 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_bot_commands.md
+2025-08-05 04:35:12,092 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:35:12,095 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_scrapers___init__.md
+2025-08-05 04:35:31,958 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:35:31,960 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_scrapers_base.md
+2025-08-05 04:35:48,817 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:35:48,857 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_scrapers_loyalty___init__.md
+2025-08-05 04:36:03,350 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:36:03,357 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_scrapers_loyalty_connect_miles.md
+2025-08-05 04:36:22,389 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:36:22,393 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_scrapers_airlines_skyscanner.md
+2025-08-05 04:36:32,697 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:36:32,710 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_scrapers_airlines_copa.md
+2025-08-05 04:36:47,555 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:36:47,558 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_scrapers_airlines___init__.md
+2025-08-05 04:37:16,093 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:37:16,227 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_api_models___init__.md
+2025-08-05 04:37:32,324 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:37:32,337 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_api_models_schemas.md
+2025-08-05 04:37:47,457 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:37:47,472 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_api_routes_analysis.md
+2025-08-05 04:38:04,144 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:38:04,147 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_api_routes_flights.md
+2025-08-05 04:38:19,954 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:38:19,973 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_api_routes_telegram.md
+2025-08-05 04:38:37,361 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:38:37,370 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/src_api_routes___init__.md
+2025-08-05 04:38:54,534 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:38:54,543 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/Celest.ia_v2_Alpha_tests_test_research_planner.md
+2025-08-05 04:39:13,355 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-05 04:39:13,366 - INFO - 💾 Report saved: /Users/rogerio/Celest.ia-v2-Alpha/codex_reports/Celest.ia_v2_Alpha_tests_test_scrapers.md

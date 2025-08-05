@@ -1,0 +1,400 @@
+/* Price Chart Component Styles */
+.price-chart {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.price-chart::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-secondary);
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chart-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.chart-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.chart-toggle {
+  display: flex;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-lg);
+  padding: 0.25rem;
+}
+
+.toggle-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.toggle-button:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+}
+
+.toggle-button.active {
+  background: var(--primary-purple);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.refresh-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.refresh-button:hover {
+  border-color: var(--primary-purple);
+  color: var(--primary-purple);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.chart-container {
+  height: 400px;
+  margin-bottom: 2rem;
+}
+
+.chart-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chart-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border-secondary);
+  border-top: 3px solid var(--primary-purple);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.chart-loading-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.chart-insights {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.insights-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.insights-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.insights-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.insight {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+}
+
+.insight:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--primary-purple);
+  transform: translateX(4px);
+}
+
+.insight-icon {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+}
+
+.insight-content {
+  flex-grow: 1;
+}
+
+.insight-text {
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.insight-details {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.insight-value {
+  color: var(--primary-cyan);
+  font-weight: 600;
+}
+
+.chart-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-lg);
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-purple);
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Miles Chart Specific Styles */
+.miles-chart {
+  animation: slideInRight 0.5s ease-out;
+}
+
+.miles-chart .chart-header h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.miles-chart .chart-header p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Custom Tooltip Styles */
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+.recharts-tooltip-content {
+  background: var(--bg-overlay) !important;
+  border: 1px solid var(--border-primary) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-xl) !important;
+  backdrop-filter: blur(12px);
+}
+
+.recharts-tooltip-label {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.recharts-tooltip-item {
+  color: var(--text-secondary) !important;
+  font-size: 0.875rem !important;
+}
+
+/* Chart Grid Lines */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--border-secondary) !important;
+  stroke-dasharray: 3 3 !important;
+}
+
+/* Chart Axes */
+.recharts-xAxis .recharts-cartesian-axis-tick text,
+.recharts-yAxis .recharts-cartesian-axis-tick text {
+  fill: var(--text-muted) !important;
+  font-size: 0.75rem !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .price-chart {
+    padding: 1.5rem;
+  }
+  
+  .chart-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .chart-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .chart-container {
+    height: 300px;
+  }
+  
+  .chart-legend {
+    gap: 1rem;
+  }
+  
+  .chart-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .insights-list {
+    gap: 0.75rem;
+  }
+  
+  .insight {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-title {
+    font-size: 1.25rem;
+  }
+  
+  .chart-toggle {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .toggle-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .chart-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-legend {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .insight {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .insight-icon {
+    align-self: center;
+  }
+}

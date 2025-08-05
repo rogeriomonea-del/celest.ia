@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://celestia_user:celestia_password@db:5432/celestia_db
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - .:/app
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=celestia_db
+      - POSTGRES_USER=celestia_user
+      - POSTGRES_PASSWORD=celestia_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: npm run dev
+
+  worker:
+    build: .
+    command: celery -A src.core.celery worker --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://celestia_user:celestia_password@db:5432/celestia_db
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - .:/app
+
+volumes:
+  postgres_data:
