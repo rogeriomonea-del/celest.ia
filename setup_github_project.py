@@ -1,3 +1,4 @@
+
 import requests
 import os
 from dotenv import load_dotenv
@@ -8,7 +9,7 @@ load_dotenv()  # Carrega variáveis do .env
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 REPO_OWNER = "rogeriomonea-del"
-REPO_NAME = "celest.ia"
+REPO_NAME = "Celest.ia-v2-Alpha"  # Corrigido
 PROJECT_NAME = "Celes.ia v2 Alpha"
 API_URL = "https://api.github.com"
 HEADERS = {
