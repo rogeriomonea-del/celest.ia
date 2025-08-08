@@ -4,6 +4,9 @@ uvicorn[standard]==0.24.0
 pydantic==2.5.0
 pydantic-settings==2.1.0
 
+# Environment variables
+python-dotenv==1.0.0
+
 # Database
 sqlalchemy==2.0.23
 psycopg2-binary==2.9.9
@@ -32,7 +35,12 @@ httpx==0.25.2
 python-telegram-bot==20.7
 
 # Utilities
-python-dotenv==1.0.0
+loguru==0.7.2
+rich==13.7.0
+
+# Security and validation
+cryptography==41.0.7
+email-validator==2.1.0
 
 # Development
 pytest==7.4.3
@@ -48,5 +56,6 @@ redis==5.0.1
 celery==5.3.4
 
 # Note: The AI system is designed to work with or without optional dependencies
+# The system will gracefully fallback to basic implementations if packages are missing
 # If scikit-learn is not available, it will use mock implementations
 # If psutil is not available, it will use mock system monitoring

@@ -1,0 +1,42 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: celestia-backend
+  namespace: 'PROJECT_ID'
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/launch-stage: GA
+        run.googleapis.com/execution-environment: gen2
+        run.googleapis.com/cpu-boost: 'true'
+        run.googleapis.com/min-instances: '0'
+        run.googleapis.com/max-instances: '30'
+        autoscaling.knative.dev/target: '80'
+    spec:
+      containerConcurrency: 80
+      containers:
+      - image: southamerica-east1-docker.pkg.dev/PROJECT_ID/celestia-registry/celestia-backend:latest
+        ports:
+        - name: http1
+          containerPort: 8080
+        env:
+        - name: ENV
+          value: production
+        - name: PORT
+          value: '8080'
+        - name: APP_MODULE
+          value: 'api.main:app'
+        - name: GCP_PROJECT_ID
+          value: 'PROJECT_ID'
+        - name: GCP_LOCATION
+          value: 'southamerica-east1'
+        - name: SERVICE_URL
+          value: 'https://CELestIA_PLACEHOLDER_URL'
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: database-url
+              key: latest
+      timeoutSeconds: 300
+      serviceAccountName: celestia-deploy@PROJECT_ID.iam.gserviceaccount.com

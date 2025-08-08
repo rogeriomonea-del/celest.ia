@@ -1,0 +1,53 @@
+name: CD - Cloud Run (SP) with Selenium
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "backend/**"
+      - ".github/workflows/cd-backend-cloudrun.yml"
+      - "infra/cloudrun/**"
+  workflow_dispatch:
+
+env:
+  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  REGION: southamerica-east1
+  SERVICE: celestia-backend
+  REPOSITORY: celestia-registry
+  IMAGE: southamerica-east1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/celestia-registry/celestia-backend:${{ github.sha }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
+      - name: Configure Docker auth
+        run: gcloud auth configure-docker southamerica-east1-docker.pkg.dev -q
+      - name: Create Artifact Registry repo (idempotent)
+        run: |
+          gcloud artifacts repositories create $REPOSITORY             --repository-format=docker             --location=$REGION             --description="Celestia Docker registry" || echo "exists"
+      - name: Build & Push
+        run: |
+          docker build -t $IMAGE -f backend/Dockerfile ./
+          docker push $IMAGE
+      - name: Expand manifest
+        run: |
+          sed "s/PROJECT_ID/${{ secrets.GCP_PROJECT_ID }}/g" infra/cloudrun/cloudrun.yaml > cloudrun.expanded.yaml
+          sed -i "s|celestia-backend:latest|celestia-backend:${{ github.sha }}|g" cloudrun.expanded.yaml
+      - name: Deploy to Cloud Run
+        run: gcloud run services replace cloudrun.expanded.yaml --region=$REGION
+      - name: Allow unauthenticated (temporário)
+        run: |
+          gcloud run services add-iam-policy-binding $SERVICE             --region=$REGION             --member="allUsers"             --role="roles/run.invoker" || true
+      - name: Output URL
+        id: url
+        run: |
+          URL=$(gcloud run services describe $SERVICE --region=$REGION --format='value(status.url)')
+          echo "url=$URL" >> $GITHUB_OUTPUT
+      - name: Ensure Cloud Tasks queue
+        run: gcloud tasks queues create celestia-queue --location=$REGION || echo "queue exists"

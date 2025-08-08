@@ -1,0 +1,5 @@
+// In your existing tasks handler after results are persisted:
+# from services.telegram_notify import notify_telegram
+# best = sorted(results, key=lambda x: x.get('price', 1e12))[:3]
+# txt = "<b>Busca finalizada</b>\n" + "\n".join([f"- {it['source']}: {it['route']} {it['date']} — {it['price']} {it.get('currency','')}" for it in best])
+# await notify_telegram(txt)
